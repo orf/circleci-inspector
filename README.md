@@ -40,7 +40,7 @@ $ head -n2 pipelines.jsonl | jq
 
 ```shell
 $ pipx install git+https://github.com/orf/circleci-inspector.git
-$ dump-circleci --version
+$ dump-circleci --help
 ```
 
 For development, clone and run:
