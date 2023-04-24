@@ -98,10 +98,12 @@ async def _main(org, repo, output, limit):
                 for action in step["actions"]:
                     step_total = action["run_time_millis"]
                     status = action["status"]
+                    name = action["name"]
                     yield {
                         "lifecycle": lifecycle,
                         "total": total,
-                        "workflow_job_name": workflow_job_name,
+                        "job_name": workflow_job_name,
+                        "action_name": name,
                         "step_total": step_total,
                         "status": status,
                         "workflow_job_id": workflow_job_id,
